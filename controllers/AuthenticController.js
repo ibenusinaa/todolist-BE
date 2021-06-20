@@ -143,6 +143,7 @@ const login = (req, res) => {
     try {
         // Step 1, get all data
         const data = req.body
+        console.log(data)
         // step 2, validasi inputannya kosong apa ngga
         if(!data.email || !data.password) throw {message: 'Masih ada data yang belum kamu isi'}
 
